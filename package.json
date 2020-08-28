@@ -1,0 +1,23 @@
+{
+  "name": "ym_mock_server",
+  "version": "1.0.5",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --color --mode=production"
+  },
+  "dependencies": {
+    "json-server": "^0.14.0",
+    "lodash": "^4.17.15",
+    "mockjs": "^1.0.1-beta3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@www.yimigit.com:22876/yimi_fe/corelib/mockServer.git"
+  },
+  "keywords": [
+    "env"
+  ],
+  "author": "likuan",
+  "license": "ISC"
+}
