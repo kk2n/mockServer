@@ -27,9 +27,9 @@ module.exports = function(config) {
     let pathUrlData = req.url.split('?')[0].replace('/', '')
     let pathMethod = (methodArr[pathUrlData] || '').toUpperCase()
     if (!pathMethod) {
-      res.jsonp({ msg: '404，资源未找到！' })
+      res.jsonp({ msg: '404，资源未找到！', code: '404404' })
     } else if (pathMethod !== req.method) {
-      res.jsonp({ msg: '请求方式不正确！' })
+      res.jsonp({ msg: '请求方式不正确！', code: '999999' })
     } else if (200 <= res.statusCode <= 299) {
       res.jsonp(
         mock({
